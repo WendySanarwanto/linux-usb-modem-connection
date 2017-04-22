@@ -23,6 +23,6 @@ Save the `.profile` file and run this command to apply the changes `source .prof
 ## How to connect the modem when system boot
 * Copy the `4glte` script inside cloned repository's `etc/init.d` folder, into your machine's `/etc/init.d` directory. 
 * Ensure the copied `4glte` script is executable. Run `sudo chmod 755 /etc/init.d/4glte` command to ensure this.
-* Open the copied `4glte` script as superuser & edit the entry which point to the directory location of where you put the `mswitch.sh` file at. Save the changes.
+* Open the copied `4glte` script as superuser & edit the entry which point to the directory location of where you put the `4glte.sh` file at. Save the changes.
 * Run `sudo update-rc.d 4glte defaults` to register the script as a startup script.
 * Run `sudo update-rc.d -f 4glte remove` if you want to de-register the script from being executed when the system boot.
