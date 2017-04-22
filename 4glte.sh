@@ -10,7 +10,8 @@ wait_until_connected=3
 usb_modeswitch_wait=5
 
 # define the path of `mswitch.sh` script file
-mswitch_path=$HOME/usb-modeswitch-data
+# Adjust it if necessary
+mswitch_path=/home/pi/usb-modeswitch-data
 
 # A helper method to connect 4glte USB Modem to internet.
 function connect() {
