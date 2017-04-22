@@ -11,14 +11,18 @@
 # Description:Connect 4glte usb modem on boot
 ### END INIT INFO
 
+# define the path of `4glte.sh` script file
+# Adjust it if necessary
+path_4glte=/home/pi/usb-modeswitch-data
+
 case "$1" in
   start)
     sleep 10
     # run application we want to start
-    /home/pi/usb-modeswitch-data/4glte
+    $path_4glte/4glte
     ;;
   stop)
-    /home/pi/usb-modeswitch-data/4glte disconnect
+    $path_4glte/4glte disconnect
     ;;
   *)
     echo "Usage: /etc/init.d/4glte {start|stop}"
