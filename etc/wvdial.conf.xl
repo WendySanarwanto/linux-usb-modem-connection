@@ -1,0 +1,11 @@
+[Dialer Defaults]
+Init1 = ATZ
+Init2 = ATQ0 V1 E1 S0=0 + FCLASS=0
+Init3 = AT+CGDCONT=1,"IP","xlunlimited"
+Modem Type = Analog Modem
+ISDN = 0
+Phone = *99#
+Modem = /dev/ttyUSB0
+Username = { }
+Password = { }
+Baud = 9600
